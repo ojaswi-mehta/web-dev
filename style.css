@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.7) url("image/background.png") center center fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+}
+.container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.container h1 {
+  color: rgb(237, 101, 16);
+  cursor: pointer;
+}
+.navbar ul li {
+  display: inline-block;
+  padding: 18px;
+  text-transform: uppercase;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 4px;
+  transition: 3s;
+}
+.navbar ul li a:hover {
+  box-shadow: 0 3px 50px rgb(237, 101, 16), 0 3px 50px rgb(237, 101, 16),
+    0 3px 50px rgb(237, 101, 16), 0 3px 50px rgb(237, 101, 16);
+}
+
+.content {
+  color: #fff;
+  height: 50vh;
+  padding: 2vh;
+}
+
+.content h3 {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 30%;
+}
+
+.content h1 {
+  font-size: 50px;
+}
+
+.content p {
+  text-align: center;
+  margin-top: 17px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.dish-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.dish-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.grid-item:hover .dish-details {
+  opacity: 1;
+}
+
+.dish-name {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.dish-price {
+  margin-top: 5px;
+}
+body {
+  background-color: rgb(34, 32, 24);
+  background-size: cover;
+}
